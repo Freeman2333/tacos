@@ -1,0 +1,590 @@
+// Подключаем стили библиотек
+@import '_libs.styl'
+
+// Подключаем переменные
+@import '_vars.styl'
+
+// Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
+@import '_sprite.styl'
+
+// Подключаем миксины
+@import '_mixins.styl'
+
+html 
+  line-height 1
+  font-size 16px
+  margin 0
+  padding 0  
+body
+  font-family mainFont
+  margin 0
+  padding 0
+
+h1,h2,h3,h4,h5,h6
+  margin 0
+
+ul,li
+  margin 0
+  padding 0
+  list-style-type none
+  
+p
+  margin 0
+  
+a
+  text-decoration none
+  color black
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+  vertical-align middle
+  
+textarea
+  resize none
+
+section
+  position relative
+
+input,
+select,
+button
+  outline none
+
+*, *:before, *:after
+  box-sizing border-box
+  
+.hide
+  display none
+  
+.show
+  display block
+  
+::-moz-selection 
+  background: #b3d4fc;
+  text-shadow: none;
+  
+::selection 
+  background: #b3d4fc;
+  text-shadow: none;
+  
+.clearfix:before,
+.clearfix:after 
+  content: " ";
+  display: table;
+
+.clearfix:after 
+  clear: both;
+
+.clearfix 
+  *zoom: 1;
+
+.container
+  width 97%
+  max-width 1490px
+  margin 0 auto
+  @media screen and (max-width 1400px)
+    max-width 1190px
+
+.page-title
+  font-size 60px
+  text-transform uppercase
+  font-family boldFont
+  text-align center
+  padding-top 170px
+  width 100%
+  max-width 760px
+  margin 0 auto
+  line-height 1.2
+  margin-bottom 60px
+  @media screen and (max-width 1400px)
+    padding-top 150px
+    font-size 50px
+    max-width 700px
+
+.btn 
+  font-size 18px
+  position relative
+  z-index 3
+  font-family boldFont
+  text-transform uppercase
+  display inline-block
+  transition .3s ease all
+  height 45px
+  line-height 36px
+  border 4px solid #000
+  border-radius 15px
+  padding 0 25px
+  background btnColor
+  cursor pointer
+  &:hover
+    background #fff
+  &.btn--white
+    background #fff
+    &:hover
+      background btnColor
+  
+.btn-wrapper
+  position relative
+  width 325px
+  text-align center 
+  margin 0 auto
+  &:before 
+    content ''
+    position absolute
+    top 15px
+    left 0
+    background #000
+    width 300px
+    height 5px
+    z-index 0
+  &:after
+    content ''
+    position absolute
+    top 25px
+    right 0
+    background #000
+    width 300px
+    height 4px
+    z-index 0
+
+.section-title
+  position relative
+  font-size 76px
+  text-transform uppercase
+  padding-bottom 40px
+  font-family boldFont
+  display inline-block
+  &:before
+    content ''
+    position absolute
+    width 90%
+    bottom 12px
+    left 0
+    height 6px
+    background #000
+  &:after
+    content ''
+    position absolute
+    width 90%
+    bottom 0
+    right 0
+    height 6px
+    background #000
+  
+  @media screen and (max-width: 1400px)
+    font-size 60px  
+
+.mini-title
+  font-size 18px
+  text-transform uppercase
+  font-family boldFont
+
+.section-header
+  display flex 
+  justify-content center
+  align-items flex-start
+  margin-bottom 110px
+  >*
+    width 45%
+    flex 0 0 40%
+  .section-header__left
+    margin-right 160px
+    text-align right 
+    @media screen and (max-width 1400px)
+      margin-right 100px 
+
+.section-header__text
+  line-height 30px
+  font-size 18px  
+
+// nav
+
+.main-nav__list
+  display flex
+  font-family boldFont 
+
+.main-nav__btn
+  display none
+  width 28px
+  cursor pointer
+  margin-left 30px
+  transition .3s ease all
+
+.footer-main-nav
+  .main-nav__btn
+    margin-left 0
+
+.btn-line
+  display block
+  width 28px
+  height 3px
+  margin-bottom 5px
+  background #000
+  transition .5s ease all
+  
+
+.header-main-nav
+  .main-nav__item
+    margin-right 10px
+    &.active
+    &:hover 
+      .main-nav__link
+        background black
+        color bannerColor
+
+.footer-main-nav
+  .main-nav__item
+    margin-right 10px
+    &.active
+    &:hover 
+      .main-nav__link
+        background black
+        color footerColor
+  
+        
+.main-nav__link
+  height 50px
+  line-height 50px
+  padding 0 20px
+  border-radius 20px
+  display block
+  transition all .3s ease
+  
+
+// _header
+  
+.header 
+  position absolute
+  width 100%
+  top 0
+  padding-top 60px
+  font-size 18px
+  z-index 10
+  @media screen and (max-width 1400px)
+    padding-top 30px
+    font-size 16px
+  
+// banner section
+
+.banner-slider
+  .slick-dots
+    z-index 0
+    bottom auto
+    display flex!important
+    align-items flex-end 
+    flex-direction column
+    padding 0 30px
+    top 40%
+    li
+      width 20px
+      height 20px
+      border-radius 50%
+      border 6px solid #fff
+      margin-bottom 10px
+      opacity 0.6
+      &.slick-active
+        opacity 1
+
+.banner-slide
+  min-height 100vh
+  background url('../img/general/banner-slide-bg.jpg')
+  background-size cover
+  text-align center
+  padding-bottom 30px
+  .btn
+    background btnColor
+
+.banner-slide-img-wrapper
+  text-align center
+  margin-bottom 40px
+
+.banner-slide-img
+  margin 0 auto
+  @media screen and (max-width 1400px)
+    width 450px
+    
+// what i do
+
+.what-i-do
+  padding 90px 0 100px
+  @media screen and (max-width 1400px)
+      padding 60px  0 70px    
+
+.columns
+  display flex
+  justify-content space-between
+  >*
+    width 30%
+    flex 0 0 30%
+    margin-right 15px
+    &:last-child
+      margin-right 0
+
+.what-i-do-item
+  text-align center
+  .mini-title
+    height 130px
+    position relative
+    margin-bottom 25px
+    display flex 
+    align-items flex-end
+    justify-content center
+    &:before
+      content ''
+      position absolute
+      display inline-block
+      top 0
+      width 6px
+      height 26px
+      background #000
+    &:after
+      content ''
+      position absolute
+      display inline-block
+      top 43px
+      width 6px
+      height 26px
+      background #000
+
+.what-i-do-item__top
+  height 200px
+  display flex
+  justify-content center
+  align-items flex-end
+  margin-bottom 35px
+  
+.what-i-do-item__text
+  line-height 24px
+
+// my works
+
+.my-works
+  padding 110px 0
+  @media screen and (max-width 1400px)
+    padding 80px 0
+  
+  .section-title
+    margin-left 55%
+    margin-bottom 85px 
+    @media screen and (max-width 1400px)
+        margin-bottom 60px       
+
+.my-works__content
+  display flex
+  margin-bottom 60px 
+  flex-wrap wrap
+  >*
+    width 25% 
+    flex 0 0 25%
+    img
+      width 100%  
+      height 100%         
+
+.my-works__item
+  overflow hidden 
+  cursor pointer  
+  img
+    transition 0.6s ease all
+  &:hover
+    img 
+      transform scale(1.2)
+      opacity .7  
+
+// about me 
+
+.about
+  padding 70px 0 90px
+
+.skill 
+  text-align center
+  
+.skill-img__wrapper
+  height 254px
+  text-align center
+  margin-bottom 20px
+  
+.skill-img
+  max-height 100%
+
+.skill-soft
+  text-transform uppercase
+  font-family boldFont
+  margin-bottom 30px
+  span 
+    display block
+
+.skill-soft__percent
+  font-size 48px
+  line-height 78px
+
+.skill-soft__name
+  font-size 18px
+
+.skill-descr
+  line-height 24px
+
+// footer
+
+.footer
+  padding 110px 0 50px
+  background footerColor
+
+.footer-contacts
+  display flex 
+  margin-bottom 100px
+  >*
+    flex 1
+    &:first-child
+      margin-right 160px
+
+.footer-contact__left
+  padding-top 90px
+  .btn 
+    padding 0 45px
+
+.form-group
+  margin-bottom 20px
+  label
+    text-transform uppercase
+    font-size 18px
+    font-family boldFont
+    margin-bottom 15px
+    display block
+    margin-left 10px
+    @media screen and (max-width 1400px)
+      font-size 16px
+  input
+    width 100%
+    font-size 18px
+    font-family boldFont
+    border-radius 15px
+    border 4px solid #000
+    background btnColor
+    height 45px
+    line-height 45px
+    padding 0 20px
+  textarea
+    width 100%
+    font-size 18px
+    font-family boldFont
+    border-radius 15px
+    border 4px solid #000
+    background btnColor
+    height 190px
+    otline none
+    padding 10px 20px
+    margin-bottom 45px
+
+.footer-contact__right
+  .section-title
+    margin-bottom 50px
+
+.social-list
+  text-align center
+  display flex
+  flex-wrap wrap
+  margin-bottom 80px
+
+.social-list__item
+  margin-right 10px
+  margin-bottom 10px
+  
+.social-list__img
+  display inline-block
+  &.social-list__img--fb
+    sprite($s-fb)
+  &.social-list__img--tw
+    sprite($s-tw)
+  &.social-list__img--google
+    sprite($s-google)
+  &.social-list__img--p
+    sprite($s-p)
+  &.social-list__img--in
+    sprite($s-in)
+
+.footer-contact__details
+  display flex
+  flex-wrap wrap
+
+.footer-contact__detail
+  margin-bottom 40px
+  margin-right 100px
+
+.footer-contact__detail--wide
+  width 100%
+  flex-basis 100%
+
+.contact-detail__title
+  display block
+  font-size 18px
+  font-family boldFont
+  margin-bottom 20px
+
+.contact-detail__info
+  line-height 24px
+
+.footer-bottom
+  display flex 
+  justify-content space-between
+  align-items center
+
+.footer-copyright
+  font-size 18px
+  font-family boldFont
+
+.footer-main-nav
+  margin-right -22px
+  @media screen and (max-width 1400px)
+    margin-right 0
+
+// preloader
+
+.before-load {
+  position: fixed; /*фиксированное положение блока*/
+  left: 0; /*положение элемента слева*/
+  top: 0; /*положение элемента сверху*/
+  right: 0; /*положение элемента справа*/
+  bottom: 0; /*положение элемента снизу*/
+  background: #fff; /*цвет заднего фона блока*/
+  z-index: 1001; /*располагаем его над всеми элементами на странице*/
+  display: flex
+}
+.spinner-img
+  display inline-block
+  margin auto
+  width 45px
+  height 45px
+  background url('../img/svg/spinner.svg')
+  background-size 100%
+  animation spin
+  animation-duration 2s
+  animation-iteration-count infinite
+
+@keyframes spin
+  0%
+    transform rotate(0deg)
+  100%
+    transform rotate(360deg)
+
+// Общие стили
+@import '_common_styles.styl'
+
+// Стили шапки
+@import 'modules/_header.styl'
+
+// Стили меню
+@import 'modules/_menu.styl'
+
+// Стили главной страницы
+@import 'page/_index.styl'
+
+// Стили футера
+@import 'modules/_footer.styl'
+
+// Стили медиазапросов
+@import '_media.styl'
+

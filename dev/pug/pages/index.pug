@@ -1,0 +1,106 @@
+extends ../layout/main
+
+block title
+	| Tacos
+
+block content
+	section.banner#banner
+		.banner-slider
+			.js-banner-slider
+				.banner-slide
+					h1.page-title.bounceInDown Tacos cardigan truffaut Quanted!
+					.banner-slide-img-wrapper.zoomIn
+						img(src="static/img/general/glasses.png", alt="glasses").banner-slide-img
+					.btn-wrapper.bounceInUp
+						a(href="#").btn SEE MORE
+				.banner-slide
+					h2.page-title Tacos cardigan truffaut Quanted!
+					.banner-slide-img-wrapper
+						img(src="static/img/general/glasses.png", alt="glasses").banner-slide-img
+					.btn-wrapper
+						a(href="#").btn SEE MORE
+				.banner-slide
+					h2.page-title Tacos cardigan truffaut Quanted!
+					.banner-slide-img-wrapper
+						img(src="static/img/general/glasses.png", alt="glasses").banner-slide-img
+					.btn-wrapper
+						a(href="#").btn SEE MORE
+	section.what-i-do#what-i-do
+		.container
+			.section-header
+				.section-header__left.bounceInLeft.wow
+					h2.section-title What i Do
+				.section-header__right.bounceInRight.wow
+					p.section-header__text ingerstache green juice semiotics quinoa, truffaut letterpress wolf photo booth ugh biodiesel mumblecore brunch. Meh austin vinyl banh mi, gluten-free chillwave scenester kombucha street art. Before they sold out lumbersexual chillwave, cold-pressed mumblecore beard pickled letterpress normcore crucifix.
+			.what-i-do__content.columns
+				.what-i-do-item.flipInY.wow(data-wow-duration="1.5s" data-wow-delay=".1s")
+					.what-i-do-item__top
+						img(src="static/img/content/headphones.png", alt="headphones").what-i-do__img
+					.mini-title ultricies
+					.what-i-do-item__text.
+						Four dollar toast messenger bag green juice, organic cliche tofu synth small batch locavore austin. Squid mlkshk authe ntic pinterest, pour-over gastropub XOXO seitan sartorial humblebrag. 
+				.what-i-do-item.flipInY.wow(data-wow-delay=".6s" data-wow-duration="1.5s")
+					.what-i-do-item__top
+						img(src="static/img/content/screen.png", alt="screen").what-i-do__img
+					.mini-title porttitor
+					.what-i-do-item__text.
+						Tofu mixtape selfies, swag brooklyn banh mi stumptown loca vore yr migas tousled chicharrones sriracha cray leggings. Street art tousled kale chips poutine schlitz. Pitchfork distillery next level, polaroid roof party austin. 		
+				.what-i-do-item.flipInY.wow(data-wow-delay="1.1s" data-wow-duration="1.5s")
+					.what-i-do-item__top
+						img(src="static/img/content/camera.png", alt="camera").what-i-do__img
+					.mini-title Curabitur
+					.what-i-do-item__text.
+						Dreamcatcher deep v austin schlitz drinking vinegar, messen ger bag slow-carb. Migas tumblr kombucha you probably hav en't heard of them +1 chicharrones. Tilde wayfarers craft beer stumptown, humblebrag ugh whatever. 
+	section.my-works#my-works
+		h2.section-title.zoomIn.wow my works
+		.my-works__content
+			a(href="static/img/content/work-1.jpg").my-works__item.bounceInLeft.wow(data-wow-delay=".5s")
+				img(src="static/img/content/work-1.jpg", alt="work1")
+			a(href="static/img/content/work-2.jpg").my-works__item.bounceInLeft.wow(data-wow-delay="1.5s")
+				img(src="static/img/content/work-2.jpg", alt="work2")
+			a(href="static/img/content/work-3.jpg").my-works__item.bounceInRight.wow(data-wow-delay=".5s")
+				img(src="static/img/content/work-3.jpg", alt="work3")
+			a(href="static/img/content/work-4.jpg").my-works__item.bounceInRight.wow(data-wow-delay="1.5s")
+				img(src="static/img/content/work-4.jpg", alt="work4")
+			a(href="static/img/content/work-4.jpg").my-works__item
+				img(src="static/img/content/work-4.jpg", alt="work4")
+			a(href="static/img/content/work-1.jpg").my-works__item
+				img(src="static/img/content/work-1.jpg", alt="work1")
+			a(href="static/img/content/work-3.jpg").my-works__item
+				img(src="static/img/content/work-3.jpg", alt="work3")
+			a(href="static/img/content/work-2.jpg").my-works__item
+				img(src="static/img/content/work-2.jpg", alt="work2")
+			
+		.btn-wrapper.btn--loadmore.zoomIn.wow
+			a(href="#").btn.btn--white LOAD MORE			
+	section.about#about
+		.container
+			.section-header
+				.section-header__left.bounceInLeft.wow(data-wow-duration="1s" data-wow-delay=".5s")
+					h2.section-title About me
+				.section-header__right.bounceInRight.wow(data-wow-delay=".5s")
+					p.section-header__text ingerstache green juice semiotics quinoa, truffaut letterpress wolf photo booth ugh biodiesel mumblecore brunch. Meh austin vinyl banh mi, gluten-free chillwave scenester kombucha street art. Before they sold out lumbersexual chillwave, cold-pressed mumblecore beard pickled letterpress normcore.
+			.skills.columns
+				.skill.flipInY.wow(data-wow-duration="1.5s" data-wow-delay=".5s")
+					.skill-img__wrapper
+						img(src="static/img/content/skill1.jpg", alt="skill").skill-img
+					.skill-soft
+						span.skill-soft__percent 75%
+						span.skill-soft__name photoshop
+					p.skill-descr Mustache butcher direct trade, locavore banjo flexitarian taxidermy swag poutine literally. Selvage bushwick pour-over hella, austin kogi tumblr 90's chartreuse tacos. 
+				.skill.flipInY.wow(data-wow-delay="1s" data-wow-duration="1.5s")
+					.skill-img__wrapper
+						img(src="static/img/content/skill2.jpg", alt="skill").skill-img
+					.skill-soft
+						span.skill-soft__percent 65%
+						span.skill-soft__name illustrator
+					p.skill-descr Viral actually PBRB, portland wayfarers gluten-free pour-over. Pop-up kombucha chicharrones, YOLO mixtape celiac squid. Heirloom plaid everyday carry mustache.
+				.skill.flipInY.wow(data-wow-delay="1.5s" data-wow-duration="1.5s")
+					.skill-img__wrapper
+						img(src="static/img/content/skill3.jpg", alt="skill").skill-img
+					.skill-soft
+						span.skill-soft__percent 25%
+						span.skill-soft__name kniting
+					p.skill-descr Pitchfork distillery next level, polaroid roof party austin fanny pack knausgaard everyday carry ethical freegan plaid yuccie brunch. Blue bottle wayfarers umami messenger.
+	.before-load
+		span.spinner-img

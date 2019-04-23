@@ -1,0 +1,225 @@
+
+@media screen and (max-width 1050px)
+
+	.footer-bottom
+		flex-direction column-reverse
+		
+	.footer-main-nav
+		margin-bottom 30px
+		
+	.footer-contacts >*:first-child
+		margin-right 70px
+
+@media screen and (max-width 1000px)
+
+	.page-title
+		font-size 40px
+		padding-top 170px
+		
+	.section-header
+		margin-bottom 80px
+		
+	.section-title
+		font-size 48px
+		
+	.banner-slide-img
+		width 350px
+		
+	.section-header__text
+		font-size 16px
+		
+	.section-header .section-header__left
+		margin-right 60px
+		
+	.my-works
+		padding 50px 0
+	
+	.my-works__content >*
+		flex 1 0 30%	
+		&:nth-child(4)
+				display none
+				
+	.social-list
+		margin-bottom 40px
+		
+	.footer-contacts
+		margin-bottom 50px
+		
+@media screen and (max-width 800px)
+	.main-nav
+		font-size 14px
+		
+	.page-title
+		max-width 70%
+		
+	.banner-slide
+		background bannerColor
+		
+	.section-header
+		flex-direction column
+		align-items center
+		text-align center	
+		margin-bottom 40px
+		>*
+			width 97%	
+			flex 0 0 97%
+			&:first-child
+				margin-bottom 20px
+		.section-header__left	
+			text-align center	
+			margin-right 0	
+			
+	.columns
+		flex-wrap wrap
+		>*
+			width 45%	
+			flex 1 0 45%
+			
+	.my-works
+		text-align center 
+		.section-title
+			margin-left auto
+			
+	.my-works__content >*
+		&:nth-child(3)
+			display none
+			
+	.skill 
+		margin-bottom 30px
+		&:last-child
+			margin-bottom 0
+			
+	.footer-contacts >*:first-child
+		margin-right 40px
+
+@media screen and (max-width 650px)
+
+	
+	.main-nav__btn
+		display block
+		
+	.main-nav__list
+		display none
+		position absolute
+		flex-direction column
+		background bannerColor
+		width auto
+		
+	.main-nav
+		&.show
+				
+			.main-nav__btn
+				// transform: rotate(180deg)
+				.btn-line
+					&:nth-child(1)
+						transform: rotate(45deg) translate(5px, 5px)
+					&:nth-child(2)
+						opacity: 0
+					&:nth-child(3)
+						transform: rotate(-45deg) translate(7px, -6px)
+	
+	.footer-main-nav
+		position relative
+		.main-nav__list
+			bottom 35px
+			z-index 99
+			text-align center
+			width auto
+		.main-nav__link
+			padding 0 10px
+			width 150px
+		
+	.header-main-nav 
+		.main-nav__item.active 
+			.main-nav__link
+				background none
+				color black
+		
+	.page-title
+		padding-top 70px
+		
+	.my-works__content >*
+		flex-basis 45%
+		
+	.footer-contacts
+		flex-direction column-reverse
+		text-align center
+		
+	.social-list
+		justify-content center
+		
+	.footer-contact__details
+		justify-content center
+		flex-wrap wrap
+		
+	.footer-contact__detail
+		margin-right 15px
+		margin-bottom 15px
+		
+	.footer-contact__detail--wide
+		flex-basis auto
+		width auto
+		
+	.footer-contacts >*:first-child
+		margin-right 0
+		
+	.footer-contact__left
+		padding-top 0
+		
+	.footer-contact__right 
+		margin-bottom 30px
+		
+	.footer-main-nav .main-nav__item.active .main-nav__link, .footer-main-nav .main-nav__item:hover .main-nav__link
+			background none
+			color black
+		
+@media screen and (max-width 550px)
+
+	.section-header 
+		margin-bottom 0
+		
+	.about 
+		.section-header
+			margin-bottom 30px
+		
+	.what-i-do-item
+		padding-bottom 30px
+		border-bottom 1px solid lightgray 
+		.mini-title
+			height auto
+			&:before
+				display none
+	.what-i-do-item 
+		.mini-title:after
+			display none
+	
+	.columns
+		>*
+			width 95%	
+			flex 1 0 95%
+			margin-bottom 30px
+			
+	.my-works__content >*
+		&:nth-child(2)
+			display none
+			
+	.skill-soft__percent
+		font-size 38px
+		
+	.footer-copyright
+		font-size 16px
+
+@media screen and (max-width 400px)
+
+	.section-title
+		font-size 37px
+		
+	.btn-wrapper
+	.banner-slide-img
+		width 300px
+		
+	.banner-slider .slick-dots
+		padding 0 10px
+		
+	.my-works__content >*
+		flex-basis 95%

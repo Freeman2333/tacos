@@ -1,0 +1,64 @@
+footer.footer#footer
+	.container
+		.footer-content
+			.footer-contacts
+				.footer-contact__left.bounceInLeft.wow(data-wow-duration="1.5s")
+					form.form
+						.form-group
+							label(for="name") Name
+							input(type="text" name="name")
+						.form-group
+							label(for="email") Email
+							input(type="text" name="email")
+						.form-group
+							label(for="message") Message
+							textarea(name='message').form-meassage
+						.btn-wrapper
+							input(type="submit" value="send").btn
+				.footer-contact__right.bounceInRight.wow(data-wow-duration="1.5s")
+					.section-title Contact
+					ul.social-list
+						li.social-list__item
+							a(href="#").social-list__link
+								span.social-list__img.social-list__img--fb
+						li.social-list__item
+							a(href="#").social-list__link
+								span.social-list__img.social-list__img--tw
+						li.social-list__item
+							a(href="#").social-list__link
+								span.social-list__img.social-list__img--google
+						li.social-list__item
+							a(href="#").social-list__link
+								span.social-list__img.social-list__img--p
+						li.social-list__item
+							a(href="#").social-list__link
+								span.social-list__img.social-list__img--in
+					.footer-contact__details
+						.footer-contact__detail.footer-contact__detail--wide
+							span.contact-detail__title address
+							span.contact-detail__info 9114 Bridge Street , <br>Hillsboro, OR 97124
+						.footer-contact__detail
+							span.contact-detail__title phone
+							span.contact-detail__info 4890 000 4893
+						.footer-contact__detail
+							span.contact-detail__title email
+							span.contact-detail__info me@gmail.com
+			.footer-bottom.bounceInUp.wow(data-wow-duration="1.5s")
+				.footer-copyright
+					span Copyright 2019 © by Freeman
+				nav.main-nav.footer-main-nav
+					.main-nav__btn
+						span.btn-line
+						span.btn-line
+						span.btn-line
+					ul.main-nav__list
+						li.main-nav__item
+							a(href="#banner").scroll.main-nav__link Home
+						li.main-nav__item
+							a(href="#what-i-do").main-nav__link.scroll What i do
+						li.main-nav__item
+							a(href="#my-works").main-nav__link.scroll My works
+						li.main-nav__item
+							a(href="#about").main-nav__link.scroll About
+						li.main-nav__item.active
+							a(href="#footer").main-nav__link.scroll Contact
