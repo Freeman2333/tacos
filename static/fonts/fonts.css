@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'John';
+	src: url('BIG JOHN.otf');
+
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('OpenSansLight/OpenSans-Light.eot');
+	src: local('Open Sans Light'), local('OpenSans-Light'),
+		url('OpenSansLight/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+		url('OpenSansLight/OpenSans-Light.woff') format('woff'),
+		url('OpenSansLight/OpenSans-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
